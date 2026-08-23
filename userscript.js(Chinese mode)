@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.45
 // @description  nothing
-// @author       Bilibili-我是小猪05 Xiaohongshu-起飞吧！凤凰牌飞机！ Github-zssszscnplane
+// @author       zm
 // @match        https://www.geo-fs.com/geofs.php?v=3.9
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=geo-fs.com
 // @grant        none
@@ -27,7 +27,6 @@
             '上传': '上传',
             '文件过大': '文件过大（最大 200MB）',
             '文件格式错误': '仅支持 .mp3 文件',
-            '删除': '删除',
             '查看作者': '查看作者'
         },
     };
@@ -390,22 +389,6 @@ function generateButtons() {
             progressBar.style.left = '0';
             progressBar.className = 'progress-bar';
             progressBarContainer.appendChild(progressBar);
-
-            var deleteButton = document.createElement('button');
-            deleteButton.textContent = languageMap[currentLanguage]['删除'];
-            deleteButton.style.backgroundColor = '#ff4d4d';
-            deleteButton.style.color = 'white';
-            deleteButton.style.border = 'none';
-            deleteButton.style.borderRadius = '5px';
-            deleteButton.style.padding = '5px 10px';
-            deleteButton.style.marginLeft = '10px';
-            deleteButton.style.cursor = 'pointer';
-            deleteButton.addEventListener('click', function(event) {
-                event.stopPropagation();
-                delete audioCache[sound];
-                generateButtons();
-            });
-            button.appendChild(deleteButton);
 
             soundList.appendChild(button);
         }
