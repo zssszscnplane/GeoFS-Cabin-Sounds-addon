@@ -65,7 +65,7 @@
     document.body.appendChild(soundMenu);
 
     var menuTitle = document.createElement('h1');
-    menuTitle.textContent = 'GeoFS-Cabin-Sounds-addon';
+    menuTitle.textContent = 'GeoFS 客舱广播插件';
     menuTitle.style.fontSize = '18px';
     menuTitle.style.marginBottom = '10px';
     soundMenu.appendChild(menuTitle);
