@@ -2,8 +2,8 @@
 // @name         GeoFS-Cabin-Sounds-addon
 // @namespace    http://tampermonkey.net/
 // @version      1.45
-// @description  nothing
-// @author       zm
+// @description  none
+// @author       Bilibili-我是小猪05 Xiaohongshu-起飞吧！凤凰牌飞机！ Github-zssszscnplane
 // @match        https://www.geo-fs.com/geofs.php?v=3.9
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=geo-fs.com
 // @grant        none
@@ -76,31 +76,6 @@
     menuSubtitle.style.marginBottom = '20px';
     menuSubtitle.style.color = '#666';
     soundMenu.appendChild(menuSubtitle);
-
-    var languageButton = document.createElement('button');
-    languageButton.textContent = 'Language';
-    languageButton.style.display = 'flex';
-    languageButton.style.justifyContent = 'space-between';
-    languageButton.style.alignItems = 'center';
-    languageButton.style.width = '100%';
-    languageButton.style.padding = '10px';
-    languageButton.style.marginBottom = '10px';
-    languageButton.style.backgroundColor = '#f0f0f0';
-    languageButton.style.border = 'none';
-    languageButton.style.borderRadius = '5px';
-    languageButton.style.textAlign = 'left';
-    languageButton.style.cursor = 'pointer';
-    languageButton.addEventListener('click', function() {
-        toggleLanguageMenu();
-    });
-
-    var dropdownArrow = document.createElement('span');
-    dropdownArrow.textContent = '▼';
-    dropdownArrow.style.fontWeight= 'bold';
-dropdownArrow.style.color = '#666';
-languageButton.appendChild(dropdownArrow);
-
-soundMenu.appendChild(languageButton);
 
 var languageMenu = document.createElement('div');
 languageMenu.id = 'language-menu';
