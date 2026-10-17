@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GeoFS-Cabin-Sounds-addon
 // @namespace    http://tampermonkey.net/
-// @version      1.45
+// @version      1.0
 // @description  none
 // @author       Bilibili-我是小猪05 Xiaohongshu-起飞吧！凤凰牌飞机！ Github-zssszscnplane
 // @match        https://www.geo-fs.com/geofs.php?v=3.9
